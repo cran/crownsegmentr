@@ -17,7 +17,7 @@ segmentation}
   crown_diameter_constant = 0,
   limits = c(0, 1),
   ground_height = NULL,
-  smoothing_radius = 5,
+  smoothing_radius = 10,
   ...
 )
 
@@ -26,7 +26,7 @@ segmentation}
   crown_diameter_constant = 0,
   limits = c(0, 1),
   ground_height = NULL,
-  smoothing_radius = 5,
+  smoothing_radius = 10,
   ...
 )
 
@@ -35,7 +35,7 @@ segmentation}
   crown_diameter_constant = 0,
   limits = c(0, 1),
   ground_height = NULL,
-  smoothing_radius = 5,
+  smoothing_radius = 10,
   ...
 )
 
@@ -44,7 +44,7 @@ watershed_diameter_raster(
   crown_diameter_constant = 0,
   limits = c(0, 1),
   ground_height = NULL,
-  smoothing_radius = 5,
+  smoothing_radius = 10,
   ...
 )
 
@@ -53,7 +53,7 @@ watershed_diameter_raster(
   crown_diameter_constant = 0,
   limits = c(0, 1),
   ground_height = NULL,
-  smoothing_radius = 5,
+  smoothing_radius = 10,
   ...
 )
 
@@ -62,7 +62,7 @@ watershed_diameter_raster(
   crown_diameter_constant = 0,
   limits = c(0, 1),
   ground_height = NULL,
-  smoothing_radius = 5,
+  smoothing_radius = 10,
   ...
 )
 
@@ -71,7 +71,7 @@ watershed_diameter_raster(
   crown_diameter_constant = 0,
   limits = c(0, 1),
   ground_height = NULL,
-  smoothing_radius = 5,
+  smoothing_radius = 10,
   ...
 )
 }
@@ -88,9 +88,9 @@ the ratio, at which every tree's ratio will be capped}
 \item{ground_height}{(optional) either
 \itemize{
 \item NULL, indicating that the point cloud is normalized, or
-\item a \link[terra:SpatRaster-class]{SpatRaster} digital terrain model, or
+\item a \link[terra:SpatRaster]{SpatRaster} digital terrain model, or
 \item a list of arguments to the
-\link[lidR:rasterize]{lidR rasterize_terrain()} function to normalize
+\link[lidR:rasterize_terrain]{lidR rasterize_terrain()} function to normalize
 the point cloud.
 }}
 
@@ -98,7 +98,7 @@ the point cloud.
 diameter-to-height ratio from individual trees.}
 
 \item{...}{further parameters will be passed to the function
-\code{\link[lidR:its_watershed]{lidR::watershed()}}}
+\code{\link[lidR:watershed]{lidR::watershed()}}}
 }
 \value{
 a terra SpatRaster
