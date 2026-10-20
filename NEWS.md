@@ -1,4 +1,11 @@
+# crownsegmentr 1.1.3
+* bugfix in watershed_diameter_raster and tests
+
+# crownsegmentr 1.1.2
+* Fixes in Readme
+
 # crownsegmentr 1.1.1
+* Re-Release on CRAN, after lidR had been down
 * Default values for several parameters in segment_tree_crowns were changed, due to results from a large sensitivity analysis experiment. This applies to these parameters:
 segment_crowns_only_above, 
 centroid_convergence_distance, 
@@ -19,5 +26,4 @@ This causes resulting raster values to be slightly higher in most cases.
 * Submission with all examples CRAN compatible
 
 # crownsegmentr 1.0.0
-
 * Initial CRAN submission.
